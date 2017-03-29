@@ -1,4 +1,9 @@
-/*Evaluating the Ackermann’s function*/
+/*
+Evaluating the Ackermann’s function ack that has the following rules: 
+ack(0, N ) = N + 1 
+ack(M,0)=ack(M 1, 1), M>0
+ack(M,N)=ack(M 1, ack(M,N 1))M>0, N>0
+*/
 
 ack(0,N,R):-
     R is N+1.
